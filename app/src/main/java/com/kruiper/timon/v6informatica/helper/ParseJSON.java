@@ -21,8 +21,6 @@ public class ParseJSON {
 	public static final String KEY_TYPEBRANDSTOF = "typebrandstof";
 	public static final String KEY_KENTEKEN = "kenteken";
 
-	private JSONArray autos = null;
-	private JSONArray locaties = null;
 	private String json;
 
 	public ParseJSON(String json){
@@ -34,11 +32,11 @@ public class ParseJSON {
 		ArrayList<Locatie> locatieArrayList = null;
 		try {
 			jsonObject = new JSONObject(json);
-			locaties = jsonObject.getJSONArray("locaties");
+			JSONArray locaties = jsonObject.getJSONArray("locaties");
 
 			locatieArrayList = new ArrayList<>();
 
-			for(int i=0;i<locaties.length();i++){
+			for(int i=0;i< locaties.length();i++){
 				JSONObject jo = locaties.getJSONObject(i);
 				Locatie locatie = new Locatie(jo.getString("naam"),jo.getDouble("lat"),jo.getDouble("lng"));
 
@@ -56,12 +54,12 @@ public class ParseJSON {
 		ArrayList<Auto> autoArrayList = null;
 		try {
 			jsonObject = new JSONObject(json);
-			autos = jsonObject.getJSONArray(JSON_ARRAY);
+			JSONArray autos = jsonObject.getJSONArray(JSON_ARRAY);
 
 			autoArrayList = new ArrayList<Auto>();
 
 
-			for(int i=0;i<autos.length();i++){
+			for(int i=0;i< autos.length();i++){
 				JSONObject jo = autos.getJSONObject(i);
 				Auto auto = new Auto(jo.getString(KEY_MERK),jo.getString(KEY_TYPE),jo.getString(KEY_TYPEBRANDSTOF),jo.getString(KEY_KENTEKEN),jo.getInt(KEY_ID));
 

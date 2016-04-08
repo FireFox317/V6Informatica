@@ -16,12 +16,12 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.kruiper.timon.v6informatica.R;
+import com.kruiper.timon.v6informatica.callbacks.GetAutoCallback;
 import com.kruiper.timon.v6informatica.helper.AutosList;
 import com.kruiper.timon.v6informatica.helper.ParseJSON;
 import com.kruiper.timon.v6informatica.objects.Auto;
 import com.kruiper.timon.v6informatica.objects.Gebruiker;
 import com.kruiper.timon.v6informatica.requests.GebruikerDB;
-import com.kruiper.timon.v6informatica.callbacks.GetAutoCallback;
 import com.kruiper.timon.v6informatica.requests.ServerRequests;
 
 import java.util.ArrayList;

@@ -40,8 +40,7 @@ public class GebruikerDB {
 		int leeftijd = gebruikerSP.getInt("leeftijd", -1);
 		String email = gebruikerSP.getString("email","");
 
-		Gebruiker opgeslagenGebruiker = new Gebruiker(id,naam,gebruikersnaam,wachtwoord,leeftijd,email);
-		return opgeslagenGebruiker;
+		return new Gebruiker(id,naam,gebruikersnaam,wachtwoord,leeftijd,email);
 	}
 
 	public void veranderGebruikerIngelogd(boolean ingelogd){
@@ -51,11 +50,7 @@ public class GebruikerDB {
 	}
 
 	public boolean isGebruikerIngelogd(){
-		if(gebruikerSP.getBoolean("ingelogd",false) == true){
-			return true;
-		} else {
-			return false;
-		}
+		return gebruikerSP.getBoolean("ingelogd", false);
 	}
 
 	public void verwijderGebruikerData(){

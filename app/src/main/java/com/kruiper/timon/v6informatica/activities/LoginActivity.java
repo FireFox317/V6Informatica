@@ -14,9 +14,9 @@ import android.widget.Toast;
 
 import com.dd.processbutton.iml.ActionProcessButton;
 import com.kruiper.timon.v6informatica.R;
+import com.kruiper.timon.v6informatica.callbacks.GetUserCallback;
 import com.kruiper.timon.v6informatica.objects.Gebruiker;
 import com.kruiper.timon.v6informatica.requests.GebruikerDB;
-import com.kruiper.timon.v6informatica.callbacks.GetUserCallback;
 import com.kruiper.timon.v6informatica.requests.ServerRequests;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {

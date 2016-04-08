@@ -63,7 +63,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:text="Wachtwoord vergeten? Klik hier om uw wachtwoord op te vragen"
-        android:textSize="10sp"
+        android:textSize="12sp"
         android:textStyle="bold"/>
 
 </LinearLayout>

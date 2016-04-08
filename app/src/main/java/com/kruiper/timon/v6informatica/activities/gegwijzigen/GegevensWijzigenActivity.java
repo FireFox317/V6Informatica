@@ -12,9 +12,9 @@ import android.widget.Toast;
 
 import com.dd.processbutton.iml.ActionProcessButton;
 import com.kruiper.timon.v6informatica.R;
+import com.kruiper.timon.v6informatica.callbacks.GetUserCallback;
 import com.kruiper.timon.v6informatica.objects.Gebruiker;
 import com.kruiper.timon.v6informatica.requests.GebruikerDB;
-import com.kruiper.timon.v6informatica.callbacks.GetUserCallback;
 import com.kruiper.timon.v6informatica.requests.ServerRequests;
 
 public class GegevensWijzigenActivity extends AppCompatActivity implements View.OnClickListener {
@@ -218,7 +218,7 @@ public class GegevensWijzigenActivity extends AppCompatActivity implements View.
 				public void donemsg(String s) {
 					if(s.equals("SUCCES")){
 						bOpslaan.setProgress(100);
-						if(wijzigwachtwoord == true){
+						if(wijzigwachtwoord){
 							gebruikerDB.slaGebruikerOp(gebruiker);
 						} else {
 							gebruiker.wachtwoord = gebruiker1.wachtwoord;

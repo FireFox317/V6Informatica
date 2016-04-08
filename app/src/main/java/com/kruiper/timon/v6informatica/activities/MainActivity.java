@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 	protected void onStart() {
 		super.onStart();
 		//Als gebruiker is ingelogd data laden en anders doorsturen naar LoginActivity
-		if (gebruikerDB.isGebruikerIngelogd() == true) {
+		if (gebruikerDB.isGebruikerIngelogd()) {
 			laatGebruikerDataZien();
 		} else {
 			startActivity(new Intent(this, LoginActivity.class));
