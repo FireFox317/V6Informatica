@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activities.gegwijzigen.GegevensWijzigenActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Naam wijzigen"
+                android:background="@color/colorAccent"
+                android:textColor="@color/colorIconText"
+                android:textSize="@dimen/button_size"
+                android:id="@+id/bNaamwijzigen" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etNaamWijzigen"
+                android:visibility="gone"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Leeftijd wijzigen"
+                android:background="@color/colorAccent"
+                android:textColor="@color/colorIconText"
+                android:textSize="@dimen/button_size"
+                android:id="@+id/bLeeftijdwijzigen"
+                android:layout_marginTop="30dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etLeeftijdWijzigen"
+                android:visibility="gone"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email wijzigen"
+                android:background="@color/colorAccent"
+                android:textColor="@color/colorIconText"
+                android:textSize="@dimen/button_size"
+                android:id="@+id/bEmailWijzigen"
+                android:layout_marginTop="30dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etEmailWijzigen"
+                android:visibility="gone"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wachtwoord wijzigen"
+                android:background="@color/colorAccent"
+                android:textColor="@color/colorIconText"
+                android:textSize="@dimen/button_size"
+                android:id="@+id/bWachtwoordwijzigen"
+                android:layout_marginTop="30dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etOudeWachtwoord"
+                android:hint="Huidige wachtwoord"
+                android:visibility="gone"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etNieuweWachtwoord"
+                android:hint="Nieuwe wachtwoord"
+                android:visibility="gone"/>
+
+            <com.dd.processbutton.iml.ActionProcessButton
+                android:id="@+id/bOpslaan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Opslaan"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                custom:pb_colorComplete="@color/green_complete"
+                custom:pb_colorNormal="@color/blue_normal"
+                custom:pb_colorPressed="@color/blue_pressed"
+                custom:pb_colorProgress="@color/purple_progress"
+                custom:pb_textComplete="Gelukt!"
+                custom:pb_textProgress="Laden.."
+                custom:pb_textError="Error.."
+                custom:pb_colorError="@color/red_error"/>
+
+            <com.dd.processbutton.iml.ActionProcessButton
+                android:id="@+id/bDelGebr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Verwijder account"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                custom:pb_colorComplete="@color/green_complete"
+                custom:pb_colorNormal="@color/red_error"
+                custom:pb_colorPressed="@color/red_error"
+                custom:pb_colorProgress="@color/purple_progress"
+                custom:pb_textComplete="Gelukt!"
+                custom:pb_textProgress="Laden.."
+                custom:pb_textError="Error.."
+                custom:pb_colorError="@color/red_error"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

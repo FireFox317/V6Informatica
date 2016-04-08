@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".activities.LoginActivity">
+
+    <EditText
+        android:id="@+id/etGebruikersnaam"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="Gebruikersnaam"/>
+
+    <EditText
+        android:id="@+id/etWachtwoord"
+        android:layout_width="match_parent"
+        android:inputType="textPassword"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="Wachtwoord"/>
+
+    <com.dd.processbutton.iml.ActionProcessButton
+        android:id="@+id/bLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:drawableStart="@drawable/login"
+        android:drawableLeft="@drawable/login"
+        custom:pb_colorComplete="@color/green_complete"
+        custom:pb_colorNormal="@color/blue_normal"
+        custom:pb_colorPressed="@color/blue_pressed"
+        custom:pb_colorProgress="@color/purple_progress"
+        custom:pb_textComplete="Gelukt!"
+        custom:pb_textProgress="Laden.."
+        custom:pb_textError="Error.."
+        custom:pb_colorError="@color/red_error"/>
+
+    <TextView
+        android:id="@+id/tvRegistreerLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Geen account? Klik hier om te registreren"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvWachtwoordvergeten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Wachtwoord vergeten? Klik hier om uw wachtwoord op te vragen"
+        android:textSize="10sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

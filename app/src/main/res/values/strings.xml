@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">V6Informatica</string>
+    <string name="title_activity_auto">AutoActivity</string>
+    <string-array name="typebrandstof">
+        <item>Benzine</item>
+        <item>Diesel</item>
+        <item>LPG</item>
+        <item>Hybride</item>
+        <item>Elektrisch</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="title_activity_splashscreen">Splashscreen</string>
+
+</resources>
